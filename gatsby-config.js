@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Jetpackgone`,
+    description: `Portfolio`,
+    author: `jetpackgone`
   },
   plugins: [
     {
@@ -18,5 +20,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-react-helmet`
   ],
 }

@@ -1,5 +1,8 @@
 import React from "react"
 import { css } from "@emotion/react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
@@ -20,7 +23,7 @@ const ExternalListLink = props => {
       margin-right: 1rem;
     `}>
       <a href={props.href}>{props.children}</a>
-    </li>
+    </li>  
   )
 }
 
@@ -73,22 +76,27 @@ export default function Layout({ children }) {
           Contact
         </ListLink>
       </ul>
+
       {children}
+
       <div css={css`
         position: fixed;
         bottom: 0;
         text-align: center;
+        width: auto;
       `}>
-        <ul
-          css={css`
-            float: right;
-          `}
-        >
-          <ExternalListLink>
-            <a href="mailto:jetpackgone.dev@gmail.com" rel="noreferrer">jetpackgone.dev@gmail.com</a>
+        <ul>
+          <FontAwesomeIcon icon={faEnvelope} css= {css`
+            margin-right: 0.5rem;
+          `} />
+          <ExternalListLink href="mailto:jetpackgone.dev@gmail.com" icon="faEnvelope">
+            jetpackgone.dev@gmail.com
           </ExternalListLink>
-          <ExternalListLink>
-            <a href="https://github.com/jetpackgone" target="_blank" rel="noreferrer">github.com/jetpackgone</a>
+          <FontAwesomeIcon icon={faGithub} css= {css`
+            margin-right: 0.5rem;
+          `} />
+          <ExternalListLink href="https://github.com/jetpackgone">
+            github.com/jetpackgone
           </ExternalListLink>
         </ul>
       </div>
