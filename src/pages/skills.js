@@ -25,6 +25,11 @@ export default function Skills({ data }) {
           <li>Key Vault</li>
         </ul>
       </ul>
+      <h2>Tools</h2>
+        <ul>
+          <li>New Relic</li>
+          <li>Splunk</li>
+        </ul>
     </Layout>
   )
 }

@@ -35,6 +35,7 @@
     "typography-theme-lincoln": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-source-github": "0.0.2",
     "prettier": "2.1.2"
   },
   "repository": {

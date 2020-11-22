@@ -1,24 +1,88 @@
 import React from "react"
+import { css } from "@emotion/react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
+const LanguageBlock = props => {
+  if (props.primaryLanguage) {
+    return (
+      <div css={css`
+        float: right;
+        border-bottom: 5px solid ${props.primaryLanguage.color};
+      `}>
+        {props.primaryLanguage.name}
+      </div>
+    )
+  }
+  return <div></div>
+}
+
 export default function Projects({ data }) {
+  console.log(data);
   return (
     <Layout>
       <h1>Projects</h1>
       <p>
-        List of projects here.
+        Below is a list of projects from my Github at <a href="https://github.com/jetpackgone" target="_blank" rel="noreferrer">github.com/jetpackgone</a>.
       </p>
+      {data.githubViewer.repositories.nodes.filter((node) => !node.isPrivate).map((node) => (
+        <a key={node.name} href={node.url} target="_blank" rel="noreferrer" css={css`
+          margin-bottom: 0.5rem;
+          display: block;
+          &:hover {
+            background-color: gray;
+          }
+        `}>
+          <div css={css`
+            display: inline-block;
+            width: 100%;
+          `}>
+            <LanguageBlock primaryLanguage={node.primaryLanguage}></LanguageBlock>
+            <h2 css={css`
+
+            `}>
+              {node.name}
+            </h2>
+          </div>
+
+          <div css={css`
+            display: inline-block;
+            width: 100%;
+          `}>
+            <img src={node.openGraphImageUrl} alt="none" css={css`
+              float: left;
+              width: 80px;
+              margin-left: 1.0rem;
+              margin-right: 1.0rem;
+            `}></img>
+            <p>
+              {node.description}
+            </p>
+          </div>
+        </a>
+      ))}
     </Layout>
   )
 }
 
 export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+    query Projects {
+      githubViewer {
+        repositories {
+          nodes {
+            name
+            description
+            isPrivate
+            createdAt(formatString: "MMMM DD, YYYY")
+            openGraphImageUrl
+            primaryLanguage {
+              color
+              name
+            }
+            pushedAt
+            url
+          }
+          totalCount
+        }
       }
-    }
-  }
-`
+    }`

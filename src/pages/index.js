@@ -14,8 +14,16 @@ export default function Home({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Jetpackgone
+          Welcome!
         </h1>
+
+        <p>
+          This site documents a portfolio of my career and hobbies in software engineering and indie game development.
+        </p>
+        <p>
+          This website was created using <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a>,
+          a site generator built on <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a>.
+        </p>
 
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
 
