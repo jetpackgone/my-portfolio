@@ -25,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-source-github',
       options: {
         headers: {
-          Authorization: `Bearer be95af9cf7061958cb4f2beb890d6050c45e6287`,
+          Authorization: `Bearer fab825c3047b67a6f8b4fd2ff3a7b6eb0dc3be00`,
         },
         queries: [
           `{
