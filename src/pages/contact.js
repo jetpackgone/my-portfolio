@@ -33,7 +33,7 @@ export default function Contact({ data }) {
         <FontAwesomeIcon icon={faEnvelope} css= {css`
           margin-right: 0.5rem;
         `} />
-        <ExternalListLink href="mailto:jetpackgone.dev@gmail.com" icon="faEnvelope">
+        <ExternalListLink href="mailto:jetpackgone.dev@gmail.com">
           jetpackgone.dev@gmail.com
         </ExternalListLink>
 

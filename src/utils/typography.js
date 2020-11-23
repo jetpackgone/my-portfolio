@@ -7,6 +7,9 @@ lincolnTheme.overrideStyles = ({ rhythm }, options) => ({
   },
   'a': {
     color: 'black'
+  },
+  'a:hover': {
+    color: 'gray'
   }
 })
 const typography = new Typography(lincolnTheme)
