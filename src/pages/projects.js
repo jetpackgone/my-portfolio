@@ -1,7 +1,9 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
+import { darkShade, lightAccent, midShade } from "../utils/typography"
 
 const LanguageBlock = props => {
   if (props.primaryLanguage) {
@@ -29,8 +31,11 @@ export default function Projects({ data }) {
         <a key={node.name} href={node.url} target="_blank" rel="noreferrer" css={css`
           margin-bottom: 0.5rem;
           display: block;
+          color: ${darkShade};
+          padding: 1.0rem;
+          border-radius: 25px;
           &:hover {
-            background-color: lightgray;
+            background-color: ${lightAccent};
             color: black;
           }
         `}>
@@ -48,7 +53,7 @@ export default function Projects({ data }) {
               float: left;
               font-size: 0.75rem;
               font-style: italic;
-              font-color: darkgray;
+              color: ${midShade};
               margin-left: 2.0rem;
             `}>
               Last updated: {node.pushedAt}

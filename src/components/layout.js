@@ -3,14 +3,25 @@ import { css } from "@emotion/react"
 
 import { useStaticQuery, Link, graphql } from "gatsby"
 
-import { rhythm } from "../utils/typography"
+import { rhythm, midShade, midLightShade, lightShade, darkShade } from "../utils/typography"
 
 const ListLink = props => (
   <li css={css`
     display: inline-block;
-    margin-right: 1rem;
   `}>
-    <Link to={props.to}>{props.children}</Link>
+    <Link to={props.to}
+      css={css`
+        color: ${lightShade};
+        padding: 0.5rem;
+        border-radius: 15px;
+        &:hover {
+          color: ${darkShade};
+        };
+        font-family: Varela Round,sans-serif;
+      `}
+      activeStyle={{ backgroundColor: midLightShade }}>
+        {props.children}
+    </Link>
   </li>
 )
 
@@ -36,13 +47,19 @@ export default function Layout({ children }) {
       `}
     >
       <div css={css`
-        padding-bottom: ${rhythm(1.5)};
+        padding: ${rhythm(1)};
+        margin-bottom: ${rhythm(1)};
+        background-color: ${midShade};
+        border-radius: 25px;
       `}>
         <Link to={`/`}>
           <h2
             css={css`
-              font-style: normal;
+              color: ${lightShade};
               display: inline;
+              &:hover {
+                color: ${darkShade};
+              };
             `}
           >
             {data.site.siteMetadata.title}
@@ -56,9 +73,6 @@ export default function Layout({ children }) {
           <ListLink to={`/`}>
             Home
           </ListLink>
-          <ListLink to={`/skills/`}>
-            Skills
-          </ListLink>
           <ListLink to={`/projects/`}>
             Projects
           </ListLink>
@@ -68,9 +82,8 @@ export default function Layout({ children }) {
           <ListLink to={`/contact/`}>
             Contact
           </ListLink>
-        </ul>        
+        </ul>
       </div>
-
       {children}
     </div>
   )

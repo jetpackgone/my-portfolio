@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "@emotion/core"
 import Layout from "../components/layout"
 
 const ExternalLink = props => {
@@ -8,19 +7,11 @@ const ExternalLink = props => {
   )
 }
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <Layout>
       <div>
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-        >
-          Welcome!
-        </h1>
-
+        <h1>About</h1>
         <p>
           This site documents a portfolio of my career and hobbies in software engineering and indie game development.
         </p>
