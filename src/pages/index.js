@@ -11,10 +11,15 @@ export default function Home() {
   return (
     <Layout>
       <div>
-        <h1>About</h1>
+        <h1>Welcome!</h1>
         <p>
-          This site documents a portfolio of my career and hobbies in software engineering and indie game development.
+          I am a full-stack software engineer with 5 years of experience developing web applications and distributed systems.
         </p>
+        <p>
+          I also pursue game development as a hobby.
+        </p>
+
+        <h2>About This Site</h2>
         <p>
           This website was created using <ExternalLink href="https://www.gatsbyjs.com/">Gatsby</ExternalLink>,
           a site generator built on <ExternalLink href="https://reactjs.org/">React</ExternalLink>.
@@ -22,6 +27,7 @@ export default function Home() {
         <p>
           This site uses <ExternalLink href="https://github.com/kyleamathews/typography.js/">Typography.js</ExternalLink> with
           a customized version of the <ExternalLink href="https://github.com/KyleAMathews/typography.js/tree/master/packages/typography-theme-lincoln">Lincoln</ExternalLink> theme.
+          The color palette was chosen using <ExternalLink href="http://colormind.io/">Colormind</ExternalLink>.
         </p>
         <p>
           The source code is available at <ExternalLink href="https://github.com/jetpackgone/my-portfolio">jetpackgone/my-portfolio</ExternalLink>.

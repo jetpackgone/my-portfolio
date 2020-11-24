@@ -14,6 +14,10 @@ lincolnTheme.overrideStyles = ({ rhythm }, options) => ({
   },
   'body': {
     backgroundColor: lightShade
+  },
+  'p': {
+    marginLeft: '1.0rem',
+    marginRight: '1.0rem'
   }
 })
 const typography = new Typography(lincolnTheme)
