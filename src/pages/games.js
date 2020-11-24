@@ -20,7 +20,7 @@ export default function Games({ data }) {
         <ExternalLink href="https://store.steampowered.com/app/385330/Stray_Cat_Crossing/">
           <h2>Stray Cat Crossing</h2>
         </ExternalLink>
-        <img src="https://steamcdn-a.akamaihd.net/steam/apps/385330/header.jpg?t=1447376978"></img>
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/385330/header.jpg?t=1447376978" alt="missing"></img>
         <p>
           A 2D pixel art, horror/puzzle game created in the game engine RPGMaker VX Ace.
           Made in collaboration with Jurlo, the talented artist and musician.
