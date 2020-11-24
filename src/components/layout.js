@@ -62,6 +62,9 @@ export default function Layout({ children }) {
           <ListLink to={`/projects/`}>
             Projects
           </ListLink>
+          <ListLink to={`/games/`}>
+            Games
+          </ListLink>
           <ListLink to={`/contact/`}>
             Contact
           </ListLink>
