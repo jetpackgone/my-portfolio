@@ -13,7 +13,7 @@ export default function Home() {
       <div>
         <h1>Welcome!</h1>
         <p>
-          I am a full-stack software engineer with 5 years of experience developing web applications and distributed systems.
+          I am a full-stack software engineer with 5 years of peepee poo poo  experience developing web applications and distributed systems.
         </p>
         <p>
           I also pursue game development as a hobby.
