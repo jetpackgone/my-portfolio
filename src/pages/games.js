@@ -41,13 +41,10 @@ export default function Games({ data }) {
       <div css={css``}>
         <h2>A Month Away</h2>
         <p>
+          A small camping/hiking game about outdoor exploration. Created in the Godot game engine.
+        </p>
+        <p>
           Currently in progress. Follow progress at my dev blog at <ExternalLink href="https://jetpackgone.hashnode.dev/">jetpackgone.hashnode.dev</ExternalLink>.
-        </p>
-        <p>
-          A small camping/hiking game about outdoor exploration.
-        </p>
-        <p>
-          Created in the Godot game engine.
         </p>
       </div>
     </Layout>
