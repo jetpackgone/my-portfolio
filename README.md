@@ -1,8 +1,10 @@
 # My Porfolio
 
-This repository contains the source code for my personal portfolio at https://jetpackgone.com.
+This repository contains the source code for my personal portfolio at https://jetpackgone.com, hosted on [Netlify].
 
-This site is built on Gatsby and hosted on Netlify.
+This site was created using [Gatsby](https://www.gatsbyjs.com/), a site generator built on [React](https://reactjs.org/).
+
+This site uses [Typography.js](https://github.com/kyleamathews/typography.js/) with a customized version of the [Lincoln theme](https://github.com/KyleAMathews/typography.js/tree/master/packages/typography-theme-lincoln). The color palette was chosen using [Colormind](http://colormind.io/).
 
 ## 🚀 Quick start
 

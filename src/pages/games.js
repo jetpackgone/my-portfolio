@@ -35,13 +35,13 @@ export default function Games({ data }) {
         </p>
         <p>
           Available on <ExternalLink href="https://store.steampowered.com/app/385330/Stray_Cat_Crossing/">
-          Steam</ExternalLink>. Downloaded over 17,000 times and played by Pewdiepie and more.
+          Steam</ExternalLink>. Downloaded over 17,000 times and played by <ExternalLink href="https://youtu.be/GHsCq0GXTCE">Youtuber Pewdiepie</ExternalLink> and more.
         </p>
       </div>
       <div css={css``}>
         <h2>A Month Away</h2>
         <p>
-          A small camping/hiking game about outdoor exploration. Created in the Godot game engine.
+          A small camping/hiking game about outdoor exploration. Created in the <ExternalLink href="https://godotengine.org/">Godot game engine</ExternalLink>.
         </p>
         <p>
           Currently in progress. Follow progress at my dev blog at <ExternalLink href="https://jetpackgone.hashnode.dev/">jetpackgone.hashnode.dev</ExternalLink>.

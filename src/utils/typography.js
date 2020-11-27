@@ -7,7 +7,6 @@ lincolnTheme.overrideStyles = ({ rhythm }, options) => ({
   },
   'a': {
     color: midShade,
-    textDecoration: 'none'
   },
   'a:hover': {
     color: darkAccent

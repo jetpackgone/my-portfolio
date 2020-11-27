@@ -19,7 +19,12 @@ const ListLink = props => (
         };
         font-family: Varela Round,sans-serif;
       `}
-      activeStyle={{ backgroundColor: midLightShade }}>
+      style={{
+        textDecoration: 'none'
+      }}
+      activeStyle={{
+        backgroundColor: midLightShade,
+      }}>
         {props.children}
     </Link>
   </li>
