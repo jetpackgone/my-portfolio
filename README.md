@@ -1,6 +1,6 @@
 # My Porfolio
 
-This repository contains the source code for my personal portfolio at https://jetpackgone.netlify.app/.
+This repository contains the source code for my personal portfolio at https://jetpackgone.com.
 
 This site is built on Gatsby and hosted on Netlify.
 
