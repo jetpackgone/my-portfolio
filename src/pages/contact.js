@@ -1,9 +1,9 @@
 import React from "react"
 import { css } from "@emotion/react"
-import { graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBlog } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from "../components/layout"
 
@@ -12,12 +12,12 @@ const ExternalListLink = props => {
     <li css={css`
       list-style-type: none;
     `}>
-      <a href={props.href}>{props.children}</a>
+      <a href={props.href} target="_blank" rel="noreferrer">{props.children}</a>
     </li>  
   )
 }
 
-export default function Contact({ data }) {
+export default function Contact() {
   return (
     <Layout>
       <h1>Contact</h1>
@@ -38,18 +38,14 @@ export default function Contact({ data }) {
           `} />
           github.com/jetpackgone
         </ExternalListLink>
+        <ExternalListLink href="https://jetpackgone.hashnode.dev">
+          <FontAwesomeIcon icon={faBlog} css= {css`
+            margin-right: 0.5rem;
+          `} />
+          jetpackgone.hashnode.dev
+        </ExternalListLink>
       </ul>
 
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
